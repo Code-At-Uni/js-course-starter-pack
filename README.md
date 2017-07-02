@@ -6,6 +6,7 @@ This repository contains coding challenges and helpful snippets of code to help 
 
 - Javascript coding challenges
 - A web application project skeleton
+- A license
 
 ## Javascript Coding Challenges
 
@@ -22,3 +23,11 @@ Building a web application from scratch is a great learning experience, but it's
 We've created a project skeleton of files and folders that you'll need to get your first application off the ground. Each of these files includes code comments explaining what purpose they serve and how they do that. Each folder will have a readme file like this one you're reading now explaining the contents of the folder.
 
 [Go to the web app skeleton folder.](./app/README.md)
+
+## Why is there a license?
+
+Including a license in the project is Code at Uni's way of explicitly stating what your rights are as someone copying and modifying this code. It's a common practice in software development to include licenses with code you release publicly (open source).
+
+We've chosen the MIT license which is simple and permissive. It's one of a fair few options.
+
+You can read more about software licenses here](https://choosealicense.com).
