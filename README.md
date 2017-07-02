@@ -1,2 +1,24 @@
-# js-course-starter-pack
+# Code at Uni Javacript course starter pack
+
 This repository contains coding challenges and helpful snippets of code to help you build your first web application using Javascript.
+
+## What's in my starter pack
+
+- Javascript coding challenges
+- A web application project skeleton
+
+## Javascript Coding Challenges
+
+Coding challenges are the perfect introduction to Javascript. Before jumping into building an application it's important to learn the basics.
+
+Our Code at Uni teachers have hand crafted educational and relatable problems for you to solve using Javascript. They get progessively harder as more programming concepts are introduced. You'll be forced to think laterally and combine what you've learned from previous exercises to solve some of the trickier ones.
+
+[Go to the coding challenges folder.](coding-challenges/README.md)
+
+## Web application skeleton
+
+Building a web application from scratch is a great learning experience, but it's not the fastest. Code at Uni's Javascript course is intentionally accelerated so you get to learn about more of the technologies that matter in a short amount of time.
+
+We've created a project skeleton of files and folders that you'll need to get your first application off the ground. Each of these files includes code comments explaining what purpose they serve and how they do that. Each folder will have a readme file like this one you're reading now explaining the contents of the folder.
+
+[Go to the web app skeleton folder.](./app/README.md)
