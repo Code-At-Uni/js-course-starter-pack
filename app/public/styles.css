@@ -1,0 +1,583 @@
+/*
+  The comments in this file are quite sparse.
+
+  The code is grouped into blocks of style rules which affect the same aspect of the
+  website (header, buttons, links etc.)
+
+  There is a range of complexity to demonstrate some of the advanced CSS selectors you
+  can take advantage of. You should be able to paste any CSS selector (the bit before
+  the curly braces {}) into Google and find an explanation of the syntax quite easily.
+ */
+
+/* default display styles */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: white;
+  font-size: 16px;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+/* default text styles*/
+body {
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* link styles */
+a {
+  color: #509bee;
+  text-decoration: none;
+}
+
+/* how bold is bold?*/
+strong {
+  font-weight: 600;
+}
+
+/* */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 820px;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* padding around the main section of all pages */
+.main {
+  padding: 40px 0;
+}
+
+/* heading styles */
+.heading {
+  color: #999999;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.heading a:not(.button) {
+  position: relative;
+}
+
+.heading a:not(.button):after {
+  background: #509bee;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 200ms;
+  width: 0;
+}
+
+.heading a:not(.button):hover:after {
+  width: 100%;
+}
+
+.heading strong {
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+.heading strong:before {
+  color: #999999;
+  content: " / ";
+  margin: 0 0.25em;
+}
+
+.heading .button {
+  float: right;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 0.5em 1em;
+}
+
+/* website header */
+.header {
+  position: relative;
+}
+
+/* your name (included in the website header) */
+.name a {
+  background: #ffc994;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 3px 5px 4px;
+  transition-duration: 200ms;
+  transition-property: background, color;
+}
+
+.name a:hover {
+  background: #509bee;
+  color: white;
+}
+
+/* navigation (included in the website header) */
+.nav a {
+  transition: background 200ms;
+}
+
+.nav a.is-active {
+  color: #1a1a1a;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  padding: 19px 16px 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background 200ms;
+  width: 50px;
+}
+
+.hamburger span {
+  background: #333333;
+  display: block;
+  height: 1px;
+  transition: none 200ms;
+  transition-property: opacity, transform;
+}
+
+.hamburger span + span {
+  margin-top: 5px;
+}
+
+.hamburger:hover {
+  background: #f2f2f2;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    border-bottom: 1px solid #ffc994;
+    padding: 10px 0;
+  }
+  .name {
+    line-height: 30px;
+  }
+  .nav {
+    background: #f2f2f2;
+    display: none;
+    margin: 10px -20px -10px;
+    padding: 10px 0;
+  }
+  .nav a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .nav a:hover {
+    background: white;
+  }
+  html.nav-open .nav {
+    display: block;
+  }
+  html.nav-open .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translateX(3px) translateY(-3px);
+    transform-origin: left top;
+  }
+  html.nav-open .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  html.nav-open .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translateX(3px) translateY(3px);
+    transform-origin: left bottom;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+  .header .container {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  .nav {
+    align-items: center;
+    display: flex;
+  }
+  .nav a {
+    position: relative;
+    margin-left: 20px;
+    position: relative;
+  }
+  .nav a:after {
+    background: #509bee;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: width 200ms;
+    width: 0;
+  }
+  .nav a:hover:after {
+    width: 100%;
+  }
+  .nav a.is-active:after {
+    background: #ffc994;
+    width: 100%;
+  }
+}
+
+/* home page */
+.home {
+  text-align: center;
+}
+
+.home-avatar {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+}
+
+.home-avatar img {
+  display: inline-block;
+  height: 200px;
+  vertical-align: top;
+  width: 200px;
+}
+
+.home-title {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.home-introduction {
+  color: #999999;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+.home-introduction a {
+  position: relative;
+}
+
+.home-introduction a:after {
+  background: #509bee;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 200ms;
+  width: 0;
+}
+
+.home-introduction a:hover:after {
+  width: 100%;
+}
+
+.home-introduction strong {
+  background: #ffc994;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 3px 5px 4px;
+}
+
+@media screen and (min-width: 600px) {
+  .home {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    min-height: 100vh;
+  }
+}
+
+/* blog roll */
+.item + .item {
+  margin-top: 40px;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.item-title a {
+  position: relative;
+}
+
+.item-title a:after {
+  background: #509bee;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 200ms;
+  width: 0;
+}
+
+.item-title a:hover:after {
+  width: 100%;
+}
+
+.item-excerpt {
+  margin-top: 5px;
+}
+
+.post-title {
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content code {
+  background: #f2f2f2;
+  font-size: 0.9rem;
+  padding: 1px 2px 2px;
+}
+
+.post-content p, .post-content ol, .post-content ul, .post-content blockquote, .post-content pre {
+  margin-bottom: 1rem;
+}
+
+.post-content p:last-child, .post-content ol:last-child, .post-content ul:last-child, .post-content blockquote:last-child, .post-content pre:last-child {
+  margin-bottom: 0;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.post-content h2 {
+  border-bottom: 1px solid #ffc994;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+}
+
+.post-content ol {
+  list-style: decimal outside;
+  margin-left: 2rem;
+}
+
+.post-content ul {
+  list-style: disc outside;
+  margin-left: 2rem;
+}
+
+.post-content pre {
+  background: #f2f2f2;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+.post-content blockquote {
+  border-left: 2px solid #ffc994;
+  color: #999999;
+  padding: 1em 1.5em;
+}
+
+/* form elements */
+.button,
+.input,
+.textarea,
+.select select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0;
+  color: #1a1a1a;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  outline: none;
+  padding: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.button {
+  background: #f2f2f2;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em 2em;
+  transition-duration: 200ms;
+  transition-property: background, color;
+  vertical-align: top;
+  width: auto;
+}
+
+.button.blue {
+  background: #509bee;
+  color: white;
+}
+
+.button.red {
+  background: #f64141;
+  color: white;
+}
+
+.button.green {
+  background: #76ea76;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.button:hover {
+  background: #333333 !important;
+  color: white !important;
+}
+
+.button:active, .button:focus {
+  background: #1a1a1a !important;
+  color: white !important;
+}
+
+.textarea {
+  max-height: 600px;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+.select {
+  position: relative;
+}
+
+.select select {
+  cursor: pointer;
+}
+
+.select:after {
+  border: 1px solid #1a1a1a;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 10px;
+  pointer-events: none;
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 10px;
+  margin-top: -8px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+.label {
+  display: block;
+  line-height: 1.2;
+}
+
+.field + .field {
+  margin-top: 40px;
+}
+
+/* success/failure states */
+.error,
+.success {
+  line-height: 1.2;
+  margin-bottom: 40px;
+  padding: 1em;
+}
+
+.error a,
+.success a {
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+.error {
+  background: #f64141;
+  color: white;
+}
+
+.success {
+  background: #76ea76;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.missing {
+  color: #f64141;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.confirm {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Stlye the app differently on screens of varying width */
+@media screen and (max-width: 599px) {
+  .label {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .field {
+    display: flex;
+  }
+  .field.no-label {
+    padding-left: 140px;
+  }
+  .missing {
+    margin-left: 140px;
+  }
+  .label {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1rem;
+    margin-right: 20px;
+    padding-top: 1em;
+    width: 120px;
+  }
+  .input,
+  .textarea,
+  .select {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+.header {
+  z-index: 100;
+}
+
+.home {
+  z-index: 50;
+}
