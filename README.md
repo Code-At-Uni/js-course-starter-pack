@@ -20,7 +20,7 @@ Our Code at Uni teachers have hand crafted educational and relatable problems fo
 
 Building a web application from scratch is a great learning experience, but it's not the fastest. Code at Uni's Javascript course is intentionally accelerated so you get to learn about more of the technologies that matter in a short amount of time.
 
-We've created a project skeleton of files and folders that you'll need to get your first application off the ground. Each of these files includes code comments explaining what purpose they serve and how they do that. Each folder will have a readme file like this one you're reading now explaining the contents of the folder.
+We've created a project skeleton of files and folders that you'll need to get your first application off the ground. Each of these files includes code comments explaining what purpose they serve and how they do that. Each folder will have a README file like this one you're reading now explaining the contents of the folder.
 
 [Go to the web app skeleton folder.](./app/README.md)
 
