@@ -1,0 +1,96 @@
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+
+/* set the spacing around most elements to zero */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* set a normal (not bold) font weight to headings.Ensure heading font sizes have the same proportions.  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* remove default list styles (bullet points) */
+ul {
+  list-style: none;
+}
+
+/* remove any space around form input elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* ensure border widths are included in the calculation of element dimensions */
+html {
+  box-sizing: border-box;
+}
+
+/* ensure this styling rule can be overwritten by other CSS */
+* {
+  box-sizing: inherit;
+}
+
+/* ensure this styling rule can be overwritten by other CSS */
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+/* constrain media elemnts to their containers and maintain their aspect ratios  */
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* remove the ugly default iframe borders */
+iframe {
+  border: 0;
+}
+
+/* ensure table elements borders aren't counted twice and that tables display consistently across browsers*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* align all text in table data and head elements to the left and reset spacing inside these elements */
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
