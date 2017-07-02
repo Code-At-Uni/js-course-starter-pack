@@ -12,7 +12,7 @@ This repository contains coding challenges and helpful snippets of code to help 
 
 Coding challenges are the perfect introduction to Javascript. Before jumping into building an application it's important to learn the basics.
 
-Our Code at Uni teachers have hand crafted educational and relatable problems for you to solve using Javascript. They get progessively harder as more programming concepts are introduced. You'll be forced to think laterally and combine what you've learned from previous exercises to solve some of the trickier ones.
+Our Code at Uni teachers have hand crafted educational and relatable problems for you to solve using Javascript. They get progressively harder as more programming concepts are introduced. You'll be forced to think laterally and combine what you've learned from previous exercises to solve some of the trickier ones.
 
 [Go to the coding challenges folder.](coding-challenges/README.md)
 
@@ -30,4 +30,4 @@ Including a license in the project is Code at Uni's way of explicitly stating wh
 
 We've chosen the MIT license which is simple and permissive. It's one of a fair few options.
 
-You can read more about software licenses here](https://choosealicense.com).
+You can read more about software [licenses here](https://choosealicense.com).
