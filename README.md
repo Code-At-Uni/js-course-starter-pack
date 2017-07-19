@@ -4,9 +4,14 @@ This repository contains coding challenges and helpful snippets of code to help 
 
 ## What's in my starter pack
 
+- This README file
 - Javascript coding challenges
 - A web application project skeleton
 - A license
+
+## README file
+
+You're reading the README file right now! READMEs are documents that explain a programming project. As you go through this project you'll find them in each folder explaining what every file does.
 
 ## Javascript Coding Challenges
 
