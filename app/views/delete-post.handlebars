@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete a post</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main blog">
+      <div class="container">
+        <h1 class="heading">
+          <a class="button blue" href="/blog/{{postId}}">View post</a>
+          <a href="/blog">Blog</a>
+          <strong>Delete post</strong>
+        </h1>
+
+        {{!--
+          Delete post form:
+
+          The action attribute is customised to the specific post which will be
+          deleted using the postId
+        --}}
+        <form class="form" method="post" action="/delete-post/{{postId}}">
+          <p class="confirm">
+            Are you sure you want to delete the post <strong>{{postTitle}}</strong>?
+          </p>
+
+          <p>
+            <button class="button red">Delete post</button>
+            <a class="button" href="/blog/{{postId}}">Cancel</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>
