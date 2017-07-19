@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create a new post</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main blog">
+      <div class="container">
+        <h1 class="heading">
+          <a href="/blog">Blog</a>
+          <strong>Create post</strong>
+        </h1>
+
+        {{!--
+          display an error if the post couldn't be created
+        --}}
+        {{#if error}}
+          <p class="error">{{message}}</p>
+        {{/if}}
+
+        {{!--
+          display a link to the new post if it was successfully created
+        --}}
+        {{#if success}}
+          <p class="success">
+            {{message}}
+            <a href="/blog/{{postId}}">View post</a>
+          </p>
+        {{/if}}
+
+        {{!--
+          Create post form:
+
+          The value attributes are set to the values from an object called
+          formBody. This is so that if something goes wrong when the form is
+          submitted, the information is still present when the form is reloaded
+          and you don't loose your work.
+        --}}
+        <form class="form" method="post" action="/create-post">
+          <div class="field">
+            <label class="label">Title</label>
+            <input class="input" type="text" name="title" value="{{formBody.title}}">
+          </div>
+
+          {{!--
+            display an error if the user forgets to title their post
+          --}}
+          {{#if missingTitle}}
+            <p class="missing">The title is required.</p>
+          {{/if}}
+
+          <div class="field">
+            <label class="label">Excerpt</label>
+            <input class="input" type="text" name="excerpt" value="{{formBody.excerpt}}">
+          </div>
+
+          <div class="field">
+            <label class="label">Content</label>
+            <textarea class="textarea" name="content">{{formBody.content}}</textarea>
+          </div>
+
+          <!-- cerate post button -->
+          <div class="field no-label">
+            <button class="button green">Create post</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>

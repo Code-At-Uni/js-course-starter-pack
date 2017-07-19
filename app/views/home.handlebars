@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main home">
+      <div class="container">
+        <figure class="home-avatar">
+          {{!--
+            include an image from the public folder
+          --}}
+          <img src="/avatar.jpg" alt="Avatar">
+        </figure>
+
+        <h1 class="home-title">
+          Hello there, my name is Ada Lovelace.
+        </h1>
+
+        <p class="home-introduction">
+          I’m credited as <strong>the first computer programmer</strong>. There's even a programming language named after me.
+        </p>
+      </div>
+    </main>
+
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>

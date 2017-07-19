@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main contact">
+      <div class="container">
+        <h1 class="heading">Contact</h1>
+
+        {{!--
+          if the contact form was submitted successfully, show a success message
+        --}}
+        {{#if success}}
+          <p class="success">{{message}}</p>
+        {{/if}}
+
+        {{!--
+          Contact form:
+
+          The value attributes are set to the values from an object called
+          formBody. This is so that if a visitor to the site fills in
+          information but something goes wrong when the form is submitted, the
+          information is still present when the form is reloaded.
+        --}}
+        <form class="form" method="post" action="/contact">
+          <div class="field">
+            <label class="label">Name</label>
+            <input class="input" type="text" name="name" value="{{formBody.name}}">
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <input class="input" type="email" name="email" value="{{formBody.email}}">
+          </div>
+
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="select">
+              <select name="subject">
+                <option value="press">Press inquiry</option>
+                <option value="work">Work opportunity</option>
+                <option value="hi">Just to say hi!</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <textarea class="textarea" name="message">{{formBody.message}}</textarea>
+          </div>
+
+          <!-- Send button -->
+          <div class="field no-label">
+            <button class="button">Send</button>
+          </div>
+        </form>
+
+        <section>
+          {{!--
+            if the server identifies any errors with the form, they'll be
+            displayed here
+          --}}
+          {{#if error}}
+            <p class="error">{{message}}</p>
+          {{/if}}
+
+          {{#if missingName}}
+            <p class="missing">The name is required.</p>
+          {{/if}}
+
+          {{#if missingEmail}}
+            <p class="missing">The email is required.</p>
+          {{/if}}
+
+          {{#if missingMessage}}
+            <p class="missing">The message is required.</p>
+          {{/if}}
+        </section>
+
+      </div>
+    </main>
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>
