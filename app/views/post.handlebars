@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{!--
+      set the page title to the title of the blog post
+    --}}
+    <title>{{title}} | Blog</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main post">
+      <div class="container">
+        <h1 class="heading">
+          <a href="/blog">Blog</a>
+          {{!--
+            include the title of the blog post
+          --}}
+          <strong>{{title}}</strong>
+        </h1>
+
+        {{!--
+          include the content of the blog post
+        --}}
+        <main class="post-content">
+          {{{content}}}
+        </main>
+      </div>
+    </main>
+
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>
