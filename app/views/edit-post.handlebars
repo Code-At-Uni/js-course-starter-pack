@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit a post</title>
+    {{> head}}
+  </head>
+  <body>
+    {{!--
+      include the site header partial
+    --}}
+    {{> header}}
+
+    <main class="main blog">
+      <div class="container">
+        <h1 class="heading">
+          <a class="button blue" href="/blog/{{postId}}">View post</a>
+          <a href="/blog">Blog</a>
+          <strong>Edit post</strong>
+        </h1>
+
+        {{!--
+          display an error if the post couldn't be edited
+        --}}
+        {{#if error}}
+          <p class="error">{{message}}</p>
+        {{/if}}
+
+        {{!--
+          display a success message if the post was edited
+        --}}
+        {{#if success}}
+          <p class="success">{{message}}</p>
+        {{/if}}
+
+
+        {{!--
+          Edit post form:
+
+          The value attributes are set to the values from an object called
+          formBody. This is so that if something goes wrong when the form is
+          submitted, the information is still present when the form is reloaded
+          and you don't loose your work.
+        --}}
+        <form class="form" method="post" action="/edit-post/{{postId}}">
+          <div class="field">
+            <label class="label">Title</label>
+            <input class="input" type="text" name="title" value="{{formBody.title}}">
+          </div>
+          {{#if missingTitle}}
+            <p class="missing">The title is required.</p>
+          {{/if}}
+
+          <div class="field">
+            <label class="label">Excerpt</label>
+            <input class="input" type="text" name="excerpt" value="{{formBody.excerpt}}">
+          </div>
+
+          <div class="field">
+            <label class="label">Content</label>
+            <textarea class="textarea" name="content">{{formBody.content}}</textarea>
+          </div>
+
+          <div class="field no-label">
+            <button class="button green">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    {{!--
+      include the site footer partial
+    --}}
+    {{> footer}}
+  </body>
+</html>
