@@ -92,4 +92,4 @@
 // Functions can have side effects, modifying variables outside of the function body. 
 // The parameters we define for a function will be set equal to what the user passes in to us. This part just happens automatically for us! 
 
-// Next week we'll be putting together everything we learned this week with a bunch of practice! 
+// Next we'll be putting together everything we learned by trying to build our own bookstore! 
