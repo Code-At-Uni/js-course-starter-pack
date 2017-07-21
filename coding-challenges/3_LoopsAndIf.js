@@ -1,12 +1,12 @@
 // Before you get started, we're going to load this file into our index.html file so we can see our console.logs show up in the browser like we have the past two days! 
   // To do this, open up your index.html file in your favorite text editor. 
   // You'll notice that we're loading up several script files already, for the exercises we've done over the past two days. 
-  //     <script type="text/javascript" src="day2Arrays.js"></script>
+  //     <script type="text/javascript" src="2_Arrays.js"></script>
   // What the browser is doing is going off and loading/executing them in the order we give these files. 
     // So first it's going to go through and load up the day1Objects.js file, and execute all the code we've written in there. 
     // Then, after we've already run all of day1Objects.js, it's going to go through and run day2Arrays.js, with all the results from day1Objects.js available to us since it's already been run!
     // You can roughly think of this as if we just copied and pasted the code from these two files into the same file, in the order that we gave the file names. 
-  // Let's go throguh and duplicate one of these lines, changing the name of the file to day3LoopsAndIf.js.
+  // Let's go throguh and duplicate one of these lines, changing the name of the file to 3_LoopsAndIf.js.
   // Now just make sure that your day3LoopsAndIf.js file is saved in the same location as your other two .js files, and you should be good to go!
 
 // Loops:

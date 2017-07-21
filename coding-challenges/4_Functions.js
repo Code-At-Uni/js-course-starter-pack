@@ -1,9 +1,9 @@
 // Welcome to functions! 
-// First things first, make sure to add this file to your index.html file, just like you did yesterday. 
+// First things first, make sure to add this file to your index.html file, just like you did with LoopsAndIf. 
 // Functions are an incredibly important part of JS. They let us follow the programming best practice of being DRY (Don't Repeat Yourself). Whenever we start typing the same thing multiple times, we can probably put that inside a function, making our lives easier, and our code easier to read. 
 
 // Let's ease into this. 
-// 1. Let's a function called speak that takes in a single parameter called item, and logs that item to the console.
+// 1. Let's make a function called speak that takes in a single parameter called item, and logs that item to the console.
   var speak = function(item) {
     console.log('item is set equal to what the user passed into us:', item);
   }

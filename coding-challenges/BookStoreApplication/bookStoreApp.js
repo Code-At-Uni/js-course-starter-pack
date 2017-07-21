@@ -31,7 +31,7 @@ function __dontWorryAboutThis(){
 	return __createBookStore(__booksArray);
 
 } 
-//Don't pay any attention to the man behind the curtain in lines 1-30. Remember, the leading underscores in the variable names mean you shouldn't be messing with these variables. 
+//Don't pay any attention to the man behind the curtain in lines 1-33. Remember, the leading underscores in the variable names mean you shouldn't be messing with these variables. 
 
 function testUser(){
 	var balance = Math.random() * 100 + 130;
@@ -76,47 +76,15 @@ var checkStore = function(booktitle){
 // Update the balance to reflect it has gone! 
 
 Susan.deleteBook = function(bookname) {
-	for(var i = 0; i < Susan['cart'].length; i++) {
-		if(Susan["cart"][i]["title"] === bookname) {
-			var deleteme = confirm("Are you sure you want to delete this book?");
-			if(deleteme === true) {
-				Susan["cart"].splice(i, 1);
-				return Susan;
-			} else {
-				return Susan;
-			}
-		} 
-	}
 };
 
 
-Susan.clearCart = function() {
-	var deleteAll = confirm("Are you sure you want to clear your whole cart?");
-	if(deleteAll === true) {
-		for(var i = 0; i < Susan['cart'].length; i++) {
-			Susan["cart"].splice(0, Susan['cart'].length);
-			return Susan;
-		};
-	} else {
-		return Susan;
-	}
-};
+// What other functionality do you think our bookstore needs, try adding more information
 
-Susan.checkOut = function() {
-	var cartTotal = 0;
-	for(var i = 0; i < Susan["cart"].length; i++) {
-		cartTotal += Susan["cart"][i]["price"];
-	}
-	if(Susan["balance"] >= cartTotal) {
-		Susan["balance"] -= cartTotal
-		Susan.clearCart()
-		console.log(Susan)
-		alert("You have successfully checked out!");
-	} else {
-		alert("Sorry you don't have enough money to buy these books! Maybe try kindle?");
-	}
-};
+// How about adding a method that deletes all the books from your cart?
 
-// add the same loops again for type and author? 
-// to display multiple books my one author.... interesting .	
+
+// Maybe even... a way to checkout from the store? 
+
+// to display multiple books by one author.... interesting .	
 

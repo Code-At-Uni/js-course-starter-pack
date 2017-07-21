@@ -76,4 +76,4 @@
     // Arrays have a .length proeprty which automatically udpates with the length of the array
     // Arrays are 0-indexed. That is, the first item you add into an array is stored at the 0th position, arr[0]. 
     // Values in arrays must be accessed using bracket notation
-// We've gone over how to access individual values from arrays and objects, but you're probably curious if there's an easier way to access all the values in an array or object. We've mentioned the two different types of loops we have available for arrays and objects, and tomorrow we're going to practice them in more depth! Loops are great ways of accessing all the values in an array or object efficiently. 
+// We've gone over how to access individual values from arrays and objects, but you're probably curious if there's an easier way to access all the values in an array or object. We've mentioned the two different types of loops we have available for arrays and objects, and next we're going to practice them in more depth! Loops are great ways of accessing all the values in an array or object efficiently. 
