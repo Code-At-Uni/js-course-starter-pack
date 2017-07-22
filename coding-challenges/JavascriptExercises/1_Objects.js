@@ -2,7 +2,7 @@
 //As you start your JS journey, there's a ton of value in just building out the muscle memory for the fundamentals. 
 //To get these fundamentals as deeply embedded as possible, type them out new each time. Avoid copying code, as you're just ignoring a chance to get in more useful practice. 
 
-// 1. To start, let's create a variable, mysticalAnimal, and set it equal to an object literal. 
+// 1. To start, let's create a variable, mysticalAnimal, and set it equal to an object. 
 
 
 // Dot Notation:
@@ -28,10 +28,10 @@
 // Recall that we can do two different things with bracket notation:
   // A. Evaluate a variable or expression, and look up what that variable evalutates to as a property name in the object.
   // B. Pass in a string (as noted by the quotes surrounding it) and look up that string as a property name in the object. 
-// Remember that bracket notation is the ONLY way to look up variables or expressions when using them with objects. 
 
-// 8. Create a variable called newPropertyToAdd, and set it equal to 'food'. 
-// 9. Now, using bracket notation and newPropertyToAdd, create a food property on our mysticalAnimal object, and set it equal to 'BBQ'. NOTE: you should not be typing the word food to accomplish this task!
+// 8. Create a variable called newPropertyToAdd, and set it equal to 'food'.
+
+// 9. Now, using bracket notation and newPropertyToAdd, create a food property on our mysticalAnimal object, and set it equal to 'BBQ'. 
 // 10. Now set newPropertyToAdd equal to 'canFly'.
 // 11. What do you expect to happen when we type in the following line?
   // mysticalAnimal[newPropertyToAdd] = true; 
@@ -45,6 +45,8 @@
     // Now, it looks up the string 'canFly' as a property name on our mysticalAnimal object, and returns the value that is stored at that property name, which is the boolean value true in this case. 
   // That's pretty cool that we can pretend to be the machine and explain exactly what it's doing with each character of code that we've written! See, no black magic here. It just follows a set of rules that we've agreed on beforehand. 
 // Now, onto point B above of using bracket notation- passing in a string. 
+
+// ******** NIGHTMARE MODE! ********* // 
 
 // 12. Using bracket notation still, pass in the string 'collects' inside the brackets, and set it equal to the value 'diamonds and gold and fire extinguishers'. 
 // At first glance, this appears to be a different pattern than passing in a variable inside the brackets. But let's revisit the same steps we talked through above, and you'll notice that all we did was make one step simpler for the computer. 

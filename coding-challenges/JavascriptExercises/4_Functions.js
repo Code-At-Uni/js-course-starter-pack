@@ -54,6 +54,10 @@
   // Move that error-inducing line until after the return statement. What happens now?
   // The return statement tells the interpreter that we're done with all the code inside the function body, so the error-inducing code after the return statement never gets executed!
 
+
+// ******** NIGHTMARE MODE! ********* // 
+
+
 // We can return anything we want from a function! 
 // 12. Let's create a function called superPowerAdder, that does a few things:
   // A. takes in a single object

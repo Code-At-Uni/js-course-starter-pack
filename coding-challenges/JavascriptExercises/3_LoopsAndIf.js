@@ -103,7 +103,11 @@ var obj = {
     // if it is both greater than 100 and less than 400
     // Remember that we use && for and statements. 
   // Inside another for loop for arr, only console.log the values that are either above 400, or less than 200. 
-    // Remember that we use || for or statements. 
+    // Remember that we use || for or statements.
+
+
+// ******** NIGHTMARE MODE! ********* // 
+
 // 9. Now let's combine an if statement with our array for loop. 
   // Let's put 
   // if(arr[i]) {

@@ -53,6 +53,10 @@
 // 8. invoke treasureChest.pop(); What value is returned to you? What does your array look like afterwards? 
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push). 
+
+
+// ******** NIGHTMARE MODE! ********* // 
+
 // 9. Use both .unshift and .shift on your treasureChest. As always, console.log your treasureChest afterwards to see the result. What happens? Can you explain it to your pair?
 // 10. Now that we've populated treasureChest, let's add that to the mysticalAnimal object we created yesterday. We had a property on there called collects. Overwrite that property with the trasureChest array we've been playing with. console.log the mysticalAnimal object afterwards to make sure the collects property is now set equal to your array. 
 // 11. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
