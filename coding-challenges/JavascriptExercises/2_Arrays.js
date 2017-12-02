@@ -49,18 +49,20 @@
 // We should now have at least 5 things in our treasureChest array. Mine looks like this: ['ethically sourced sandals', 'friends', 'rock climbing gear', 'JS knowledge', 'colored pants']. 
 // 7. Go through and access each value in the array. This might feel tedious, but building up the muscle memory of it will be really helpful later on when you don't even have to think about this anymore!
 // While .push is by far the most used array method, there are a couple others worth knowing that they exist, though you won't need to have them memorized like you should have .push memorized. 
+
+// ******** NIGHTMARE MODE! ********* // 
+
 // .pop() will take the last value out of an array and give it to you. 
 // 8. invoke treasureChest.pop(); What value is returned to you? What does your array look like afterwards? 
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push). 
 
 
-// ******** NIGHTMARE MODE! ********* // 
 
 // 9. Use both .unshift and .shift on your treasureChest. As always, console.log your treasureChest afterwards to see the result. What happens? Can you explain it to your pair?
 // 10. Now that we've populated treasureChest, let's add that to the mysticalAnimal object we created yesterday. We had a property on there called collects. Overwrite that property with the trasureChest array we've been playing with. console.log the mysticalAnimal object afterwards to make sure the collects property is now set equal to your array. 
 // 11. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
-// 11. Now create three new objects. Each object should have the following properties: 
+// 12. Now create three new objects. Each object should have the following properties: 
   // type- a string specifying what type of mysticalAnimal this is. Unicorns and dinosaurs and yeti and Loch Ness Monsters and polar bears and red pandas are all viable options!
   // collects- an array with a few things this animal might collect
   // canFly- a boolean (true or false- no strings around it, these are reserved keywords) representing whether this animal can fly or not. 
