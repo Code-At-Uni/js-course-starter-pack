@@ -38,7 +38,7 @@
   // If you don't do anything with the result a function returns, it will have done all that work, only to hand the results off to nothing, essentially dropping it on the floor since nothing was there to catch it. 
 // 8. Create a variable in the global scope called sideEffectResults, and set it equal to 20. 
 // 9. Create a variable called add5SideEffect that takes in no parameters, and doesn't return anything. Instead, this function will have a side effect by adding 5 to sideEffectResults. 
-  // Invoke add5SideEffect inside your day4Functions.js file. What do you see in your console? 
+  // Invoke add5SideEffect inside your 4_Functions.js file. What do you see in your console? 
   // Answer: nothing! 
   // console.log sideEffectResults. Now what do you see in your console? add5SideEffect worked! It had a side effect, in this case changing a variable available in the global scope. 
   // Out of curiosity, what happens when you try the following line?
