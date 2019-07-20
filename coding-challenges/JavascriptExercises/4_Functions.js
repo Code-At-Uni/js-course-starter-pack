@@ -28,7 +28,7 @@
 // A function can work in one of two primary ways: through returned values, or side effects. 
 // Let's explore what this means. 
 // 6. Create a function called add5Return. All it does is take in a single number, and return that number plus 5. Do not put any console.logs inside this function- we're going to play with that part next!
-// 7. Invoke add5Return from inside your day4Functions.js file. What do you see in the console?
+// 7. Invoke add5Return from inside your 4_Functions.js file. What do you see in the console?
   // Answer: nothing! 
   // What's going on here? 
   // We're invoking the function, it's running and doing what we want, but we're not doing anything with the results returned from it. 
