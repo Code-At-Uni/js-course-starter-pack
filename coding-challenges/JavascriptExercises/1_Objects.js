@@ -17,7 +17,7 @@
 // Access using dot notation
 // 7. Now try to access all the values you've stored in mysticalAnimal. One at a time (not all at once!), what do you need to do to access the values:
   // 'dragon'
-  // 'Larry'
+  // 'Leslie'
   // []
   // your own name
   // 'gives amazing hugs'
